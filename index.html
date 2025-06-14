@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <title>나만의 새 탭</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 40px 20px;
+      background: #f5f5f5;
+      font-family: "Segoe UI", sans-serif;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    h1 {
+      margin-bottom: 40px;
+      color: #333;
+      font-size: 28px;
+    }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
+      gap: 20px;
+      max-width: 1000px;
+      width: 100%;
+    }
+    .tile {
+      background: white;
+      border-radius: 12px;
+      padding: 20px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+      text-align: center;
+      text-decoration: none;
+      color: #333;
+      font-size: 16px;
+      transition: transform 0.2s, box-shadow 0.2s;
+    }
+    .tile:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+    }
+  </style>
+</head>
+<body>
+  <h1>자주 방문하는 사이트</h1>
+  <div class="grid">
+    <a class="tile" href="https://www.google.com" target="_blank">Google</a>
+    <a class="tile" href="https://www.naver.com" target="_blank">Naver</a>
+    <a class="tile" href="https://www.youtube.com" target="_blank">YouTube</a>
+    <a class="tile" href="https://www.github.com" target="_blank">GitHub</a>
+    <a class="tile" href="https://www.reddit.com" target="_blank">Reddit</a>
+    <a class="tile" href="https://mail.google.com" target="_blank">Gmail</a>
+    <a class="tile" href="https://news.ycombinator.com" target="_blank">Hacker News</a>
+    <a class="tile" href="https://chat.openai.com" target="_blank">ChatGPT</a>
+    <a class="tile" href="https://calendar.google.com" target="_blank">Google Calendar</a>
+    <a class="tile" href="https://www.stackoverflow.com" target="_blank">Stack Overflow</a>
+    
+    <!-- 원하는 만큼 추가 가능 -->
+    <!-- <a class="tile" href="https://example.com" target="_blank">Example</a> -->
+  </div>
+</body>
+</html>
